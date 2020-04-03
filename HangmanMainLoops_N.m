@@ -23,7 +23,7 @@ LetterGuessCount=1;
 while incorrect < 6 && correct < 6
     alreadyGuessed = 0;
     
-    for letter = lettersGuessed  % I added this for loop
+    for letter = lettersGuessed 
         
         if guess == letter
             disp("You already guessed that letter.");
@@ -39,22 +39,27 @@ while incorrect < 6 && correct < 6
     lettersGuessed(length(lettersGuessed)+1) = guess;
     
     if guess==word(1)    %this checks if the input is equal to the letter in each respective position in the word (positions 1 through 6)
+        fprintf('Correct! \n')
         addToGraph(guess, 1)
         
     elseif guess==word(2)
-        
+        fprintf('Correct! \n')
         addToGraph(guess, 2)
         
     elseif guess==word(3)
+        fprintf('Correct! \n')
         addToGraph(guess, 3)
         
     elseif guess==word(4)
+        fprintf('Correct! \n')
         addToGraph(guess, 4)
             
     elseif guess==word(5)
+        fprintf('Correct! \n')
         addToGraph(guess, 5)
                         
     elseif guess==word(6)
+        fprintf('Correct! \n')
         addToGraph(guess, 6)
           
     else %this next series of if and elseif statements deals with incorrect inputs
